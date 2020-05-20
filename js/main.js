@@ -93,7 +93,7 @@ function convertBorough(boroName){
 function initDatasets(){
   
     //NY districts geoshapes  
-    $.get("https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/nycd/FeatureServer/0/query?where=1=1&outFields=*&outSR=4326&f=geojson",                  function(response){  
+    $.get("https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/ArcGIS/rest/services/NYC_Community_Districts/FeatureServer/0/query?where=1=1&outFields=*&outSR=4326&f=geojson",                  function(response){  
       var geoshapes = JSON.parse(response);      
       //console.log(geoshapes);
       //push initial district objects into dictricts array
